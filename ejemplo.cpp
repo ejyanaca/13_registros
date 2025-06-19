@@ -77,6 +77,7 @@ int main(){
     cout<<"Ventas totales: "<<EMPLEADOS[num_t].ventt<<endl;
     cout<<"---------------------------------------------------------"<<endl;
     cout<<endl;
+    cout<<"EMPLEADOS CON VENTAS MENORES A TREINTA EN DICIEMBRE:"<<endl;
     for(int i=0; i<n; i++){
         if(EMPLEADOS[i].ven[11]<30){
             cout<<"Numero : "<<EMPLEADOS[i].num<<endl;
