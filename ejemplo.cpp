@@ -47,6 +47,6 @@ int main(){
         cout<<"Salario : ";
         cout<<EMPLEADOS[i].sal<<endl;
     }
-
+    cout<<"Esto es una prueba";
     return 0;
 }
