@@ -51,6 +51,16 @@ int main(){
            cout<<EMPLEADOS[i].sal<<endl;
            cout<<"-------------------------------------------------"<<endl;
     }
+    for(int i=0; i<n; i++){
+        if(EMPLEADOS[i].ventt > 100){
+            float aumento=EMPLEADOS[i].sal * 0.10;
+            EMPLEADOS[i].sal=EMPLEADOS[i].sal+aumento;
+            cout<<endl;
+            cout<<"Aumento aplicado al empleado: "<<EMPLEADOS[i].nom<<endl;
+            cout<<"Venta totales : "<<EMPLEADOS[i].ventt<<endl;
+            cout<<"Nuevo salario : "<<EMPLEADOS[i].sal<<endl;
+        }
+    }
     int num_t=0;
     float ven_max= EMPLEADOS[0].ventt;
     for(int i=1; i<n; i++){
@@ -59,6 +69,7 @@ int main(){
             num_t=i;
         }
     }
+    cout<<"---------------------------------------------------------"<<endl;
     cout<<endl;
     cout<<"EMPLEADO CON MAYOR VENTAS ANUALES : "<<endl;
     cout<<"Empleado numero : "<<EMPLEADOS[num_t].num<<endl;
