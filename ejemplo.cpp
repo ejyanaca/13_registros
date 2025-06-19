@@ -10,36 +10,43 @@ struct EMP{
 
 int main(){
     EMP EMPLEADOS[100];
-    int n;
-    cout<<"Ingrese el numero de empleados."<<endl;
+    int n,sum; 
+    cout<<"Ingrese el numero de empleados: ";
     cin>>n;
     for(int i=0; i<n; i++){
         cout<<"Digite el numero del empleado: ";
         cin>>EMPLEADOS[i].num;
+        cout<<endl; 
         cout<<"Escriba el nombre del empleado: ";
         cin.ignore();
         getline(cin,EMPLEADOS[i].nom);
-        cout<<"Digite la venta de cada mes: ";
+        cout<<"Digite la venta de cada mes: "<<endl;
         for(int j=0; j<12; j++){
+            cout<<"Mes "<<j+1<< " : ";
             cin>>EMPLEADOS[i].ven[j];
         }
         cout<<"Salario del empleado: ";
         cin>>EMPLEADOS[i].sal;
+        cout<<endl;
+        cout<<"-------------------------------------------------"<<endl;
     }
         for(int i=0; i<n; i++){
            cout<<"Empleado numero "<<i;
            cout<<EMPLEADOS[i].num;
-           cout<<" "; 
+           cout<<endl;  
            cin.ignore();
+           cout<<"Nombre : ";
            cout<<(cin,EMPLEADOS[i].nom);
-           cout<<" ";
-           cout<<"Venta por cada mes: ";
-           for(int j=0; j<12; j++){
-               cout<<EMPLEADOS[i].ven[j]<<" ";
-           }
            cout<<endl;
-        cout<<EMPLEADOS[i].sal;
+           cout<<"La venta de cada mes es:  "<<endl;
+           for(int j=0; j<12; j++){
+            cout<<"Mes "<<j+1<<" : ";
+               cout<<EMPLEADOS[i].ven[j]<<endl;
+           }
+        cout<<endl;
+        cout<<"Salario : ";
+        cout<<EMPLEADOS[i].sal<<endl;
     }
-
+    cout<<"Esto es una prueba";
     return 0;
 }
