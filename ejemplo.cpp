@@ -33,7 +33,7 @@ int main(){
         cout<<endl;
         cout<<"-------------------------------------------------"<<endl;
     }
-        for(int i=0; i<n; i++){
+    for(int i=0; i<n; i++){
            cout<<"Empleado numero : ";
            cout<<EMPLEADOS[i].num;
            cout<<endl;  
@@ -75,6 +75,15 @@ int main(){
     cout<<"Empleado numero : "<<EMPLEADOS[num_t].num<<endl;
     cout<<"Nombre: "<<EMPLEADOS[num_t].nom<<endl;
     cout<<"Ventas totales: "<<EMPLEADOS[num_t].ventt<<endl;
-
+    cout<<"---------------------------------------------------------"<<endl;
+    cout<<endl;
+    for(int i=0; i<n; i++){
+        if(EMPLEADOS[i].ven[11]<30){
+            cout<<"Numero : "<<EMPLEADOS[i].num<<endl;
+            cout<<"Nombre : "<<EMPLEADOS[i].nom<<endl;
+            cout<<"Ventas en diciembre: "<<EMPLEADOS[i].ven[11]<<endl;
+            cout<<"---------------------------------------------------------"<<endl;
+        }
+    }
     return 0;
 }
