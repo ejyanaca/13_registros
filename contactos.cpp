@@ -13,7 +13,7 @@ struct contactoEmail{
 int main(){
     int n,op;
     do{
-        system("cls");
+         system("pause");
        cout<<"Menu de opciones: -----------------------------------"<<endl; 
        cout<<" 1. Agregar contactos"<<endl;
        cout<<" 0. Salir"<<endl;

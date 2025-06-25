@@ -42,7 +42,7 @@ int main(){
               }
         }
     }
-    cout<<"\nAtleta con mayor medallas de "<<pas<<" : "<<endl;
+    cout<<"Atleta con mayor medallas de "<<pas<<" : "<<endl;
     cout<<"Nombre : "<<DATOS[indice].nom<<endl;
     cout<<"Disciplina: "<<DATOS[indice].dis<<endl;
     cout<<"Numero de medallas : "<<DATOS[indice].num<<endl;
