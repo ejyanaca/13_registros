@@ -22,7 +22,7 @@ void imprimeTabla(contactoEmail[],int);
 
 int main(){
     int n, op,conta;
-    string nom, user, domain;
+    string nom, user, domain,m;
     char sex;
     int edad;
     correo email;
@@ -34,6 +34,7 @@ int main(){
         cout<<"1. Agregar un contacto"<<endl;
         cout<<"2. Modificar un contacto"<<endl;
         cout<<"3. Mostrar contactos"<<endl;
+        cout<<"4. Mostrar lista de contactos por dominio"<<endl;
         cout<<"0. Salir"<<endl;
         cout<<"Elige una opcion: "; cin>>op;
         switch(op){
@@ -68,7 +69,9 @@ int main(){
 				}
       			cout<<"Modificar sexo? (S/N): "; cin>>r;
       			if(r=='S'||r=='s'){
-					cout<<"Ingrese el sexo: "; cin>>lista[conta-1].sex;
+                    cin.ignore();
+					cout<<"Ingrese el sexo: "; 
+                    cin>>lista[conta-1].sex;
 				}
                 cout<<"Modificar la edad? (S/N): "; cin>>r;
                 if(r=='S'||r=='s'){
@@ -89,6 +92,17 @@ int main(){
                 }
                 system("pause");
                 break;
+            case 4: 
+            	cout<<"Ingrese el dominio: "; cin>>m;
+            	for(int i=0; i<n; i++){
+            		if(lista[i].email.domain==m){
+            			cout<<"Contacto #"<<i+1<<endl;
+                        imprimeContacto(lista[i]);
+                        cout<<endl;
+					}
+				}
+				system("pause");
+				break;
             case 0:
                 char sal;
                 cout<<"Esta seguro de salir? (S/N): "; cin>>sal;
