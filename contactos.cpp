@@ -35,6 +35,7 @@ int main(){
         cout<<"2. Modificar un contacto"<<endl;
         cout<<"3. Mostrar contactos"<<endl;
         cout<<"4. Mostrar lista de contactos por dominio"<<endl;
+        cout<<"5. Eliminar un contacto"<<endl;
         cout<<"0. Salir"<<endl;
         cout<<"Elige una opcion: "; cin>>op;
         switch(op){
@@ -103,6 +104,14 @@ int main(){
 				}
 				system("pause");
 				break;
+            case 5: 
+                system("cls");
+                cout<<"Ingrese el numero de contacto que desea eliminar: "; cin>>conta;
+                for(int i=conta-1; i<n; i++){
+                    lista[i]=lista[i+1];
+                }
+                n=n-1;
+                break;
             case 0:
                 char sal;
                 cout<<"Esta seguro de salir? (S/N): "; cin>>sal;
