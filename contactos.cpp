@@ -72,7 +72,7 @@ int main(){
 				}
                 cout<<"Modificar la edad? (S/N): "; cin>>r;
                 if(r=='S'||r=='s'){
-					cout<<"Ingrese la edad: "; cin>>lista[conta-1].edad;
+					cout<<"Ingrese la edad : "; cin>>lista[conta-1].edad;
 				}
                 cout<<"Modificar el correo electronico? (S/N): "; cin>>r;
                 if(r=='S'||r=='s'){
