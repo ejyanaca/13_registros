@@ -127,7 +127,7 @@ void imprimeContacto(contactoEmail &c){
     cout<<"Email: "<<c.email.user<<"@"<<c.email.domain<<endl;
 }
 void imprimeTabla(contactoEmail lista[],int n){
-    cout<<left<<setw(5)<<"Nro"
+    cout<<left<<setw(5)<<"Nro:"
         <<setw(30)<<"Nombres"
         <<setw(6)<<"Sexo"
         <<setw(6)<<"Edad"
